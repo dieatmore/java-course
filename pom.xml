@@ -11,6 +11,7 @@
     <modules>
         <module>java-experient</module>
         <module>java-homework</module>
+        <module>java-experiment</module>
     </modules>
 
     <properties>

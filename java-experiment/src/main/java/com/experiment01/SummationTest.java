@@ -1,4 +1,4 @@
-package com.experient01;
+package com.experiment01;
 
 public class SummationTest {
     public static void main(String[] args) {

@@ -1,4 +1,8 @@
-package com.homework05.entity;
+package com.homework05.test;
+
+import com.homework05.entity.Game;
+import com.homework05.entity.Role;
+import com.homework05.entity.User;
 
 public class Test {
 
