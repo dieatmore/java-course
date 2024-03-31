@@ -22,7 +22,7 @@ public class Test {
         Item[] items1 = {item1, item2};
         Item[] items2 = {item3, item4};
         // 调用测试addOrder()方法
-        //OrderService.addOrder(user1, items1);
-        OrderService.addOrder(user1, items2);
+        OrderService.addOrder(user1, items1);
+        //OrderService.addOrder(user1, items2);
     }
 }
