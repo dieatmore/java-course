@@ -65,4 +65,5 @@ public class Test {
                 .findFirst()
                 .ifPresentOrElse(student -> System.out.println(student.getTeacher().getCollege().getName()),()-> System.out.println("未知学院"));
     }
+
 }
