@@ -9,6 +9,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.Comparator;
+import java.util.Iterator;
 
 public class StudentServiceImpl implements StudentService {
 
@@ -62,6 +64,15 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public boolean removeStudent(int id) {
-        return DatabaseUtils.listStudents().removeIf(s -> s.getId() == id);
+        Iterator<Student> studentIterator = DatabaseUtils.listStudents().iterator();
+        boolean b = false;
+        while (studentIterator.hasNext()){
+            Student student = studentIterator.next();
+            if(id == student.getId()){
+                studentIterator.remove();
+                b = true;
+            }
+        }
+        return b;
     }
 }

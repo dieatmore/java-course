@@ -4,7 +4,6 @@ public class Student {
     public enum Sex {
         MALE, FEMALE
     }
-
     private int id;
     private Sex sex;
     private String name;
