@@ -46,10 +46,6 @@ public class Test {
                 .findFirst()
                 .map(student -> student.getTeacher().getCollege().getName())
                 .get();
-        // return null;
-
-
-
     }
 
     /**
